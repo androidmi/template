@@ -1,0 +1,24 @@
+{
+	data:{
+		title:"本地通话时常",
+		template:"本地通话：<font color='#ff00ff'><big>20</big>分钟</font>剩余已用thyy分钟/总共thzh分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+		regexp:"本地通话时长累计(?<thzh>[0-9\.\,]+)分钟，已使用(?<thyy>[0-9\.\,]+)分钟;国内短信累计(?<dxzh>[0-9\.\,]+)条，已使用(?<dxyy>[0-9\.\,]+)条"
+	},
+	h:"本地通话：<font color='#ff00ff'><big>20</big>分钟</font>剩余已用thyy分钟/总共thzh分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+	h2:"本地通话：<span style='color:#ff00ff;font-size:50'>20</span>分钟 <span style:'color:#ff0000'>剩余已用thyy分钟/总共thzh分钟</span>",
+	array:[{title:"本地通话",
+			template:"本地主叫本地通话时长累计thzh分钟，已使用thyy分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+			regexp:"已使用(?<dxyy>[0-9\.\,]+)条"},
+			{title:"语音通话",
+			sub:[{
+				title:"3G通话",
+				template:"本地主叫本地通话时长累计thzh分钟，已使用thyy分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+				regexp:"本地通话时长累计(?<thzh>[0-9\.\,]+)分钟，已使用(?<thyy>[0-9\.\,]+)分钟;国内短信累计(?<dxzh>[0-9\.\,]+)条，已使用(?<dxyy>[0-9\.\,]+)条"},
+				{title:"WLAN长途通话",
+				template:"本地主叫本地通话时长累计thzh分钟，已使用thyy分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+				regexp:"本地通话时长累计(?<thzh>[0-9\.\,]+)分钟，已使用(?<thyy>[0-9\.\,]+)分钟;国内短信累计(?<dxzh>[0-9\.\,]+)条，已使用(?<dxyy>[0-9\.\,]+)条"
+				}]
+			},{title:"3G话费",
+			template:"本地主叫本地通话时长累计thzh分钟，已使用thyy分钟;通话时长累计thzh分钟;已使用thyy分钟;剩余thsy分钟",
+			regexp:"本地通话时长累计(?<thzh>[0-9\.\,]+)分钟，已使用(?<thyy>[0-9\.\,]+)分钟;国内短信累计(?<dxzh>[0-9\.\,]+)条，已使用(?<dxyy>[0-9\.\,]+)条"}]
+}

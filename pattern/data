@@ -1,0 +1,6 @@
+{
+	data:{
+		template:"当前余额dqye.可用余额kyye",
+		regexp:"[当前余额|总账户]余额为(?<dqye>[0-9\\.]+)元"
+	}
+}

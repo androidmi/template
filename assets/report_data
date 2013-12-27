@@ -1,0 +1,19 @@
+obj.put("showCount", showCount);
+                    obj.put("parseOkCount", parseOkCount);
+                    
+                    item.put("isp",  cxt.getResources().getStringArray(Res.array.provider_list)[smsInfo.getProviderValue()]);
+            item.put("brands", cxt.getResources().getStringArray(NetSetNetworkActivity.
+                        PROVIDER_BRANDS[smsInfo.getProviderValue()])[smsInfo.getBrandValue()]);
+            item.put("location", smsInfo.getProvinceText());
+            
+{
+	"showCount":20,//需要显示的条目数
+	"parseOkCount":10,//解析成功显示的条目数
+	 “ids”:[1,2,3],//条目id数组
+	"isp":"中国移动",
+	"location":"北京",
+	"brands":"动感地带"
+}
+{
+	array:[{}]
+}
